@@ -32,7 +32,7 @@ function sum(num1, num2) {
 */
 
 function trueOrFalse(data) {
-  if(data === truthy) {
+  if(data !== false && null && undefined && '' && 0 && NaN) {
     return true
   } else {
     return false
@@ -48,7 +48,7 @@ function trueOrFalse(data) {
 */
 
 function oddChecker(num) {
-  if(num === odd) {
+  if(num % 2 === 1) {
     return "the number is odd"
   } else {
     return "the number is even"
@@ -62,9 +62,11 @@ function oddChecker(num) {
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-function iLove('name', 'love') {
-  return 'name' + 'love'
+function iLove(name, love) {
+  return `${name} loves ${love}`
 }
+
+iLove('Ryan', 'Kelsey')
 
 
 //////////////////PROBLEM 8////////////////////
