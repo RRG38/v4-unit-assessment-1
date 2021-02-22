@@ -107,11 +107,11 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
-const me {
-  firstName: 'Ryan';
-  state: 'Colorado';
-  age: 31;
-  greeter: 
+const me = {
+  firstName: 'Ryan',
+  state: 'Colorado',
+  age: 31,
+  greeter: `Hello! My name is ${firstName} and I live in ${state}`
 }
 
 //////////////////PROBLEM 12////////////////////

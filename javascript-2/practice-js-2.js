@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-let gitDefinition = 'Git is repository application that allows us to have version control'
+let gitDefinition = 'Git is a version control system used to track the progress of our projects. It allows us to commit changes at various points in the development process.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@ let gitDefinition = 'Git is repository application that allows us to have versio
     It should be a string containing your best definition of what GitHub is.
 */
 
-let gitHubDefinition = 'GitHub is a website that can store your projects. It shows you version control and you can clone your projects to work on them and then push them back to gitHub to be stored'
+let gitHubDefinition = 'GitHub is the website where our git repositories are stored. To store our code remotely, we can "push" our commits to github.'
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -35,7 +35,7 @@ let gitHubDefinition = 'GitHub is a website that can store your projects. It sho
 
 //CODE HERE
 let init = {
-    description: 'initiates git';
+    description: 'initializes git in your current repository. This means that git will start watching all of the files and directories in that location.tiates git',
     code: 'git init'
 }
 
@@ -47,7 +47,7 @@ let init = {
 
 //CODE HERE
 let clone = {
-    description: 'clones a repository so you can work on it on your local machine';
+    description: 'We are able to easily make copies of existing repositories on GitHub, this is called cloning. First you need to copy the url for the github repo that you wish to clone down to your local machine then navigate to the directory that you want to clone the repo into. Once you are in the correct directory run:',
     code: 'git clone <url>'
 }
 
@@ -60,7 +60,7 @@ let clone = {
 //CODE HERE
 
 let status = {
-    description: 'returns what branch working on and if it is up to date';
+    description: 'to check what stage of the process you are on to push your code to github',
     code: 'git status'
 }
 
@@ -72,7 +72,7 @@ let status = {
 
 //CODE HERE
 let add = {
-    description: 'this adds your changes to the holding area of the branch you are working on';
+    description: ' tells git to track any changes that have been made. This is the command you can run to start the process of pushing your code to github.',
     code: 'git add .'
 }
 
@@ -84,7 +84,7 @@ let add = {
 
 //CODE HERE
 let commit = {
-    description: 'takes your changes from the holding area and applies them on your branch';
+    description: 'After staging your code using git add . we now need to commit our changes. This is the final step we will take before pushing our code to github. Think about commits as check points or save points in your code. You will need to provide a message about the commit using the -m flag.',
     code: 'git commit -m"message of your changes"'
 }
 
@@ -105,6 +105,6 @@ let commit = {
 
 //CODE HERE
 let push = {
-    description: 'this command sends the changes you made to your GitHub account to be stored';
-    code: 'git push'
+    description: 'After staging and commiting your code, it is now ready to be pushed up to github. When your code is ready to be pushed, run:',
+    code: 'git push origin master'
 }
